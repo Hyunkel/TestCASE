@@ -2,6 +2,7 @@ import requests
 import json
 import unittest
 import b
+import xmlrunner
 
 
 class TestURL(unittest.TestCase, b.CustomAssertions):
@@ -33,4 +34,4 @@ class TestURL2(unittest.TestCase, b.CustomAssertions):
         self.check_data_full_mb(r.content)
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='./Demo_xml'))
