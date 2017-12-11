@@ -6,12 +6,6 @@ import xmlrunner
 
 
 class TestURL(unittest.TestCase, b.CustomAssertions):
-    def setUp(self):
-        print("Thiet Lap cac Truong Hop Cua TestUnitTes")
-
-    def tearDown(self):
-        print("Don dep cac truong hop cua TestUnitest")
-    
     global url
     global r
     url = url = "http://localhost:3000/kqxsmb?id=8-11-2017"
@@ -20,12 +14,6 @@ class TestURL(unittest.TestCase, b.CustomAssertions):
         self.check_stt_code(r)
 
 class TestURL2(unittest.TestCase, b.CustomAssertions):
-    def setUp(self):
-        print("Thiet Lap cac Truong Hop Cua TestUnitTes")
-
-    def tearDown(self):
-        print("Don dep cac truong hop cua TestUnitest")
-    
     global url
     global r
     url = url = "http://localhost:3000/kqxsmb?id=8-11-2017"
